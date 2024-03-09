@@ -30,7 +30,14 @@ class _MyButtonState extends State<MyButton> {
             children: <Widget>[
               ElevatedButton(
                 onPressed: _incrementCounter,
-                child: Text('+'),
+                child: Text('+', style: TextStyle(fontSize: 20, color: Colors.orange.shade500),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow.shade300,
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
               ),
               SizedBox(width: 10),
               Text(
@@ -40,7 +47,14 @@ class _MyButtonState extends State<MyButton> {
               SizedBox(width: 10),
               ElevatedButton(
                 onPressed: _decrementCounter,
-                child: Text('-'),
+                child: Text('-', style: TextStyle(fontSize: 20, color: Colors.orange.shade500),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow.shade300,
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
               ),
             ],
           ),

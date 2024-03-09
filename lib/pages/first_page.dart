@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:menu_restoran1/pages/mainpage.dart';
+import 'package:menu_restoran1/pages/mainpage2.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
